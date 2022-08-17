@@ -5,7 +5,7 @@ const portfolio = [
         id: '01',
         name: 'Sunday Flower',
         desc: 'html,css,javascriptで作ったレスポンシブ対応なお花屋のホームページ。',
-        img: 'img/SF_preview.png',
+        img: 'img/SF_top.png',
         url: 'work01.html'
     },
     {
@@ -59,7 +59,7 @@ const work = [
         method: 'ブログが検索率高いキーワードを取り入れて、ブログの閲覧経由で「Sunday Flower」を知っていただくと想定しブログページを作りました。<br>また、ワークショップや多数の商品の展開に従ってECの機能も取り入れつつ、集客につながります。<br>サイトにて落ち着いた緑をメインカラーにして暖色の花と組み合わせることで親しみやすさと親近感を得て日曜日以外にも購入していただきます。',
         tools: 'Adobe XD, Html, CSS, JavaScript',
         time: '２０２２年７月　二週間',
-        url: 'redheadchloe.github.io/sunday-flower/',
+        url: 'https://redheadchloe.github.io/Sunday-Flower/',
         full: 'img/SF_full.png'
     },
     {
@@ -81,9 +81,6 @@ const work = [
 const links = document.querySelectorAll('.work-item a');
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', (e) => {
-        // const parent = e.target.parentElement.parentElement;
-        // console.log(parent);
-        // parent.classList.add('full');
         workWrapper.classList.add('full');
         workWrapper.innerHTML = `<a href="index.html" class="back"><i class="fa-solid fa-arrow-left-long"></i>　
         BACK</a>
